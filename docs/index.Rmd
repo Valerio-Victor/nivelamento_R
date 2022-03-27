@@ -57,6 +57,8 @@ knitr::include_graphics('https://media.giphy.com/media/6R2mLi910HL4VXFwOG/giphy.
 
 --
 
+- [**O que é esse tal de R?**](#sobre_r)
+
 
 ---
 class: inverse, center, middle 
@@ -96,15 +98,61 @@ aplicar e hoje daremos os primeiros passos!
 
 ## OBJETIVO DA AULA
 
-
 ```{r, echo = F, fig.align = 'center', out.width = '80%'}
 knitr::include_graphics('foco_aula.png')
 ```
 
+---
+class: inverse, center, middle 
+name: sobre_r
 
+# O QUE É ESSE TAL DE R?
 
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar o professor', out.width = '50%'}
+knitr::include_graphics('https://media.giphy.com/media/AEkhbYZRKUaVoEDKph/giphy.gif')
+```
 
+---
+<div style="text-align: justify">
 
+## O TAL DO R
+
+O **R** é um software livre (*open source*) que foi criado na década de 1990 por 
+dois estatísticos da Universidade de Auckland (Nova Zelândia), **R**oss Ihaka e 
+**R**obert Gentleman (isso mesmo, o nome do software se refere as iniciais dos
+nomes de seus desenvolvedores).
+
+<br>
+
+Ele foi criado por dois estatísticos e para aplicações estatísticas (por isso a
+escolha do mesmo para esta disciplina). Atualmente, a Foudation for Statistical 
+Computing dá suporte ao software e ele ganhou uma ampla gama de aplicações e 
+funcionalidades se tornando um dos programas mais utilizados em todo o mundo!
+
+<br>
+
+Programar em R significa organizar um **algoritmo que seja interpretável pelo 
+software** (na programação, dizemos: **desenvolver um algoritmo a ser compilado 
+pelo software R**). Neste sentido, é interessante desenvolver um pouco melhor este
+conceito.
+
+---
+## AFINAL, O QUE SIGNIFICA PROGRAMAR EM R?
+
+.pull-left[
+**DEFINIÇÃO DE ALGORITMO:**
+- **Matemática**: Sequência finita de regras, raciocínios ou operações que, 
+aplicada a um número finito de dados, permite solucionar classes semelhantes de problemas.
+
+- **Informática**: Conjunto das regras e procedimentos lógicos perfeitamente 
+definidos que levam à solução de um problema em um número finito de etapas.
+]
+
+.pull-right[
+**COMPILAR EM R:**
+- Tradução (ou interpretação) de um determinado código escrito (algoritmo) em 
+linguagem de máquina para a execução das tarefas definidas.
+]
 
 
 
