@@ -1,0 +1,419 @@
+---
+title: 'NIVELAMENTO EM PROGRAMAÇÃO </br> (AULA 02)'
+subtitle: 'Metodologia Quantitativa em Administração' 
+author: 
+  - 'Prof. Victor Valerio'
+date: '_Última Atualização_: `r format(Sys.Date(), "%d-%m-%Y")`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+
+xaringanthemer::style_mono_light(base_color = '#0A5632')
+                                   
+```
+
+```{r ,echo=FALSE}
+
+xaringanExtra::use_scribble()
+
+xaringanExtra::use_search(show_icon = TRUE)
+
+```
+
+class: inverse, center, middle
+
+# USE MÁSCARA!
+
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar a organização dos atendimentos ', out.width = '50%'}
+knitr::include_graphics('https://media.giphy.com/media/6R2mLi910HL4VXFwOG/giphy.gif')
+```
+
+---
+## APRESENTAÇÃO
+
+- [**Qual o Objetivo da Aula?**](#objetivo_aula)
+
+--
+
+
+---
+class: inverse, center, middle 
+name: sobre_professor
+
+# QUAL O OBJETIVO DA AULA?
+
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar o professor', out.width = '50%'}
+knitr::include_graphics('https://media.giphy.com/media/6v2UJRyFAsTXgvJrin/giphy.gif')
+```
+
+---
+<div style="text-align: justify">
+
+## OBJETIVO DA AULA
+
+Esta aula tem por objetivo principal **apresentar a principal ferramenta da 
+disciplina para aplicação dos conceitos a serem trabalhados a frente: a linguagem 
+de programação R**.
+
+<br/>
+
+De um lado, não é esperado que você tenha qualquer conhecimento prévio. Iniciaremos
+realmente "do zero", isto é, desde a fase de instalação. Por outro lado, é esperado 
+que ao final da aula toda a nossa estação de trabalho esteja pronta para uso e, 
+mais que isso, que não tenhamos medo de usá-la.
+
+<br/>
+
+**OBS:** Como se sabe, o foco da disciplina não está na programação (ela não passa 
+de uma ferramenta) e, por isso, os conceitos relativos à programação serão apenas 
+complementares e não seremos rigorosos em suas definições. Queremos aprender a 
+aplicar e hoje daremos os primeiros passos!
+
+---
+<div style="text-align: justify">
+
+## OBJETIVO DA AULA
+
+
+```{r, echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics('foco_aula.png')
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+## ÁREAS DE ATUAÇÃO
+
+.pull-left[
+**DISCIPLINAS**: 
+
+Professor Adjunto da Universidade Federal de Itajubá (UNIFEI) vinculado ao 
+Instituto de Engenharia de Produção e Gestão (IEPG).
+
+- Introdução à Economia (ECN001);
+- Macroeconomia (ADM03F);
+- Engenharia Econômica (EPR502);
+- Análise de Investimento com Risco (ADM013);
+- Metodologia Quantitativa em Administração.
+]
+
+.pull-right[
+**PESQUISAS E PROJETOS**:  
+- Modelos de Análise de Eficiência e Produtividade;
+- Análise de Viabilidade Financeira de Projetos;
+- Ciência de Dados;
+- Energia Renovável;
+- Coleta seletiva na cidade de Itajubá; 
+- Educação Financeira;
+- Geração de energia fotovoltaica para as Universidades Públicas;
+- Cidades Inteligentes.
+]
+
+---
+class: inverse, center, middle
+name: objetivo_disciplina
+
+# QUAL O OBJETIVO DA DISCIPLINA?
+
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar o objetivo da aula', out.width = '50%'}
+knitr::include_graphics('https://media.giphy.com/media/hjvinhl1pUrb1gdzlV/giphy.gif')
+```
+
+---
+## OBJETIVO GERAL DA DISCIPLINA
+
+
+
+---
+## OBJETIVO GERAL DA DISCIPLINA
+
+
+
+<div style="text-align: justify">
+- O **objetivo geral** da disciplina de **Metodologia Quantitativa em 
+Administração **consiste habilitar o estudante a "**tirar conclusões 
+consistentes**" a partir de um de um **conjunto de dados** relacionados a um 
+determinado contexto (pesquisa ou atividade profissional).
+
+---
+class: inverse, center, middle
+name: organizacao_aulas
+
+# COMO AS AULAS SERÃO ORGANIZADAS?
+
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar a organização da disciplina', out.width = '50%'}
+knitr::include_graphics('https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif')
+```
+
+---
+## ORGANIZAÇÃO DAS AULAS
+
+Nossas aulas sempre serão inciadas às 8:50h e encerradas às 11:55h, conforme 
+a oferta da disciplina. Contudo, as aulas sempre serão separadas em duas partes:
+
+.pull-left[
+### Teoria (8:50h às 10:30h)
+- Aulas expositivas;
+- Foco nos conceitos e suas aplicações;
+- Apresentações de problemas reais (inclusão do contexto de cada estudante, 
+quando possível).
+]
+
+.pull-right[
+### Programação (11h às 11:55h)
+- Aulas práticas em laboratório;
+- Foco em conceitos da Ciências de Dados.
+- Programação em linguagem R.
+]
+
+---
+class: inverse, center, middle
+name: atendimentos
+
+# COMO OS ATENDIMENTOS SERÃO ORGANIZADOS?
+
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar a organização dos atendimentos ', out.width = '50%'}
+knitr::include_graphics('https://media.giphy.com/media/rCknyN636Sfb4bN2Zm/giphy.gif')
+```
+
+---
+<div style="text-align: justify">
+
+## ORGANIZAÇÃO DOS ATENDIMENTOS
+
+Basicamente, teremos duas formas de atendimento para discutir dúvidas conceituais,
+aplicações específicas ao contexto de cada estudante ou mesmo dúvidas de 
+programação.
+
+
+- **REUNIÕES VIRTUAIS**: Para agendar uma reunião basta clicar 
+[**AQUI**](https://calendly.com/profvictorvalerio/atendimento). 
+Não é necessário enviar e-mail, ligar, pedir durante a aula, fazer
+sinal de fumaça, ou qualquer outra coisa. O professor já determinou os horários 
+disponíveis durante a semana e basta fechar uma data na agenda a partir do link 
+acima;
+
+
+- **REUNIÕES PRESENCIAIS**: Na inviabilidade de realizar reuniões nos horários 
+previamente disponibilizados pelo professor (ver o link acima), deve-se buscar 
+agenda mediante contato por e-mail mais uma vez, **victor.dmv@unifei.edu.br**).
+
+Uma **dica** é dar preferência para as **reuniões virtuais** pois elas poderão ser 
+gravadas e, assim, utilizadas para estudos futuros! 
+
+---
+class: inverse, center, middle
+name: cronograma
+
+# QUAL O CRONOGRAMA E QUAIS OS CONTEÚDOS DA DISCIPLINA?
+
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar a organização dos atendimentos ', out.width = '50%'}
+knitr::include_graphics('https://media.giphy.com/media/lJnAXeJO8tE7E37mxq/giphy.gif')
+```
+
+---
+## CRONOGRAMA DA DISCIPLINA
+
+.pull-left[
+```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
+library(magrittr)
+library(kableExtra)
+
+cronograma <- data.frame(
+  
+  AULA = c(1, 2, 3, 4, 5, 6, 7, 8),
+  
+  DIA = c('21/03', '28/03', '04/04', '11/04', '18/04', '25/04', '02/05', '09/05'),
+  
+  TEMAS = c('Apresentação da Disciplina', 
+           
+           'Nivelamento em Programação', 
+           
+           'Conceitos Básicos', 
+           
+           'Medidas de Tendência Central',
+           
+           'Medidas de Dispersão',
+           
+           'Análise Gráfica',
+           
+           'Resumo dos Dados', 
+           
+           'Apresentação de Trabalho'))
+
+knitr::kable(cronograma, 
+             
+             escape = FALSE,
+    
+             format = 'html',
+             
+             align = c('c', 'l', 'l')) %>%
+  
+  kable_styling(bootstrap_options = 'striped')
+
+```
+]
+
+.pull-right[
+```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
+library(magrittr)
+library(kableExtra)
+
+cronograma <- data.frame(
+  
+  AULA = c(9, 10, 11, 12, 13, 14, 15, 16),
+  
+  DIA = c('16/05', '23/05', '30/05', '06/06', '13/06', '20/06', '27/06', '04/07'),
+  
+  TEMAS = c('Curva Normal e Propriedades', 
+           
+           'Estimadores', 
+           
+           'Teste de Hipótese (Amostra Única)', 
+           
+           'Teste de Hipótese (Duas Amostras)',
+           
+           'Teste de Hipótese (Mais Amostras)',
+           
+           'Medidas de Relação',
+           
+           'Correlação', 
+           
+           'Apresentação de Trabalho'))
+
+knitr::kable(cronograma, 
+             
+             escape = FALSE,
+    
+             format = 'html',
+             
+             align = c('c', 'l', 'l')) %>%
+  
+  kable_styling(bootstrap_options = 'striped')
+
+```
+]
+
+---
+class: inverse, center, middle
+name: avaliacoes
+
+# QUAL O CRONOGRAMA DAS AVALIAÇÕES?
+
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar a organização dos atendimentos ', out.width = '50%'}
+knitr::include_graphics('https://media.giphy.com/media/SEWEmCymjv8XDbsb8I/giphy.gif')
+```
+
+---
+## COMPOSIÇÃO DAS NOTAS
+
+</br>
+
+- Equação Nota 1: $Nota_1  = 0,8. Trabalho_{parte 1} + 0,2.Questionários_{parte 1}$
+
+</br>
+
+- Equação Nota 2: $Nota_2  = 0,8 .Trabalho_{parte 2} + 0,2.Questionários_{parte 2}$
+
+</br>
+
+- Equação Nota Final: $Nota_{Final}  = (Nota_1 + Nota_2)/2$
+
+---
+class: inverse, center, middle
+
+
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif para agradecer pela atenção e o tema é da série the office', out.width = '80%'}
+
+knitr::include_graphics('https://media.giphy.com/media/n4oKYFlAcv2AU/giphy.gif')
+
+```
+
