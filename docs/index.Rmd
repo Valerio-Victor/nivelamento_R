@@ -67,7 +67,7 @@ name: sobre_professor
 # QUAL O OBJETIVO DA AULA?
 
 ```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar o professor', out.width = '50%'}
-knitr::include_graphics('https://media.giphy.com/media/6v2UJRyFAsTXgvJrin/giphy.gif')
+knitr::include_graphics('https://media.giphy.com/media/6v2UJR yFAsTXgvJrin/giphy.gif')
 ```
 
 ---
@@ -154,9 +154,49 @@ definidos que levam à solução de um problema em um número finito de etapas.
 linguagem de máquina para a execução das tarefas definidas.
 ]
 
+---
+<div style="text-align: justify">
+## PRECISAMOS SER ORGANIZADOS, SEMPRE!
 
+Como visto, um algoritmo é uma sequência de etapas escritas em um código e com 
+alguma finalidade específica. Mas essa singela definição pode deixar passar um 
+fato importante: **O código pode ser muito grande, com muitos "atributos"!**
 
+<br/>
 
+Assim, o seu desenvolvimento pode se tornar complexo em alguns casos e, mais que 
+isso, o seu entedimento no futuro (quando for retomado por você ou mesmo por outros pesquisadores) também pode ser complicado.
+
+<br/> 
+
+Para nos ajudar nessa tarefa de organizar os algoritmos desenvolvidos, ou em 
+desenvolvimento, utilizamos um outro aplicativo denominado: **RStudio**. Vale 
+ressaltar, isso significa que **continuamos programando em linguagem R**, mas com a 
+ajuda de um organizador chamado **RStudio** (em programação, esse "organizador"
+é chamado de **IDE -  Integrated Development Enviroment**).
+
+---
+## A CARA DA CIÊNCIA DE DADOS!
+
+.pull-left[
+**R ("linguagem")**
+
+<br/>
+
+```{r, echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics('foto_r.png')
+```
+]
+
+.pull-right[
+**RStudio ("organizador")**
+
+<br/>
+
+```{r, echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics('foto_rstudio.jpg')
+```
+]
 
 
 
