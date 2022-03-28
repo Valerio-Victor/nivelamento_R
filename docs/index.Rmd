@@ -59,15 +59,19 @@ knitr::include_graphics('https://media.giphy.com/media/6R2mLi910HL4VXFwOG/giphy.
 
 - [**O que é esse tal de R?**](#sobre_r)
 
+--
+
+- [**Vamos iniciar o nosso dicionário?**](#dicionario_r)
+
 
 ---
 class: inverse, center, middle 
-name: sobre_professor
+name: objetivo_aula
 
 # QUAL O OBJETIVO DA AULA?
 
 ```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar o professor', out.width = '50%'}
-knitr::include_graphics('https://media.giphy.com/media/6v2UJR yFAsTXgvJrin/giphy.gif')
+knitr::include_graphics('https://media.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif')
 ```
 
 ---
@@ -199,301 +203,94 @@ knitr::include_graphics('foto_rstudio.jpg')
 ]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
-## ÁREAS DE ATUAÇÃO
+class: inverse, center, middle 
+name: dicionario_r
 
-.pull-left[
-**DISCIPLINAS**: 
+# VAMOS INICIAR O NOSSO DICIONÁRIO?
 
-Professor Adjunto da Universidade Federal de Itajubá (UNIFEI) vinculado ao 
-Instituto de Engenharia de Produção e Gestão (IEPG).
-
-- Introdução à Economia (ECN001);
-- Macroeconomia (ADM03F);
-- Engenharia Econômica (EPR502);
-- Análise de Investimento com Risco (ADM013);
-- Metodologia Quantitativa em Administração.
-]
-
-.pull-right[
-**PESQUISAS E PROJETOS**:  
-- Modelos de Análise de Eficiência e Produtividade;
-- Análise de Viabilidade Financeira de Projetos;
-- Ciência de Dados;
-- Energia Renovável;
-- Coleta seletiva na cidade de Itajubá; 
-- Educação Financeira;
-- Geração de energia fotovoltaica para as Universidades Públicas;
-- Cidades Inteligentes.
-]
-
----
-class: inverse, center, middle
-name: objetivo_disciplina
-
-# QUAL O OBJETIVO DA DISCIPLINA?
-
-```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar o objetivo da aula', out.width = '50%'}
-knitr::include_graphics('https://media.giphy.com/media/hjvinhl1pUrb1gdzlV/giphy.gif')
-```
-
----
-## OBJETIVO GERAL DA DISCIPLINA
-
-
-
----
-## OBJETIVO GERAL DA DISCIPLINA
-
-
-
-<div style="text-align: justify">
-- O **objetivo geral** da disciplina de **Metodologia Quantitativa em 
-Administração **consiste habilitar o estudante a "**tirar conclusões 
-consistentes**" a partir de um de um **conjunto de dados** relacionados a um 
-determinado contexto (pesquisa ou atividade profissional).
-
----
-class: inverse, center, middle
-name: organizacao_aulas
-
-# COMO AS AULAS SERÃO ORGANIZADAS?
-
-```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar a organização da disciplina', out.width = '50%'}
-knitr::include_graphics('https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif')
-```
-
----
-## ORGANIZAÇÃO DAS AULAS
-
-Nossas aulas sempre serão inciadas às 8:50h e encerradas às 11:55h, conforme 
-a oferta da disciplina. Contudo, as aulas sempre serão separadas em duas partes:
-
-.pull-left[
-### Teoria (8:50h às 10:30h)
-- Aulas expositivas;
-- Foco nos conceitos e suas aplicações;
-- Apresentações de problemas reais (inclusão do contexto de cada estudante, 
-quando possível).
-]
-
-.pull-right[
-### Programação (11h às 11:55h)
-- Aulas práticas em laboratório;
-- Foco em conceitos da Ciências de Dados.
-- Programação em linguagem R.
-]
-
----
-class: inverse, center, middle
-name: atendimentos
-
-# COMO OS ATENDIMENTOS SERÃO ORGANIZADOS?
-
-```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar a organização dos atendimentos ', out.width = '50%'}
-knitr::include_graphics('https://media.giphy.com/media/rCknyN636Sfb4bN2Zm/giphy.gif')
+```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar o professor', out.width = '50%'}
+knitr::include_graphics('https://media.giphy.com/media/9psHrHyIXciY6lCz8B/giphy.gif')
 ```
 
 ---
 <div style="text-align: justify">
 
-## ORGANIZAÇÃO DOS ATENDIMENTOS
+## CONCEITOS INICIAIS
 
-Basicamente, teremos duas formas de atendimento para discutir dúvidas conceituais,
-aplicações específicas ao contexto de cada estudante ou mesmo dúvidas de 
-programação.
+- **OPERAÇÃO:** Similar ao conceito da matemática (soma "+", subtração "-", 
+multiplicação "*", divisão "/", potenciação "**" e etc.).
 
+<br/>
 
-- **REUNIÕES VIRTUAIS**: Para agendar uma reunião basta clicar 
-[**AQUI**](https://calendly.com/profvictorvalerio/atendimento). 
-Não é necessário enviar e-mail, ligar, pedir durante a aula, fazer
-sinal de fumaça, ou qualquer outra coisa. O professor já determinou os horários 
-disponíveis durante a semana e basta fechar uma data na agenda a partir do link 
-acima;
+- **OBJETO:** Qualquer coisa (número, conjunto de números, imagens, etc.) que 
+pode ser associada (armazenada) em uma variável. Para criar um objeto no R (ou 
+associar determinada informação à um objeto) utiliza-se o sinal de atribuição 
+"<-" (como se fosse uma seta que mostra o que está sendo atribuído ao objeto).
 
+<br/>
 
-- **REUNIÕES PRESENCIAIS**: Na inviabilidade de realizar reuniões nos horários 
-previamente disponibilizados pelo professor (ver o link acima), deve-se buscar 
-agenda mediante contato por e-mail mais uma vez, **victor.dmv@unifei.edu.br**).
+- **FUNÇÃO:** Ação (ou conjunto de ações) pré-definidas a serem implementadas de 
+modo a gerar um *output* a partir de algum *input* a ser fornecido. Os inputs
+fornecidos para uma função são chamados de **Argumentos**.
 
-Uma **dica** é dar preferência para as **reuniões virtuais** pois elas poderão ser 
-gravadas e, assim, utilizadas para estudos futuros! 
+<br/>
 
----
-class: inverse, center, middle
-name: cronograma
+- **PACOTES:** Bibliotecas contendo funções com finalidades específicas (em 
+alguns casos, contendo dados de exemplo também).
 
-# QUAL O CRONOGRAMA E QUAIS OS CONTEÚDOS DA DISCIPLINA?
-
-```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar a organização dos atendimentos ', out.width = '50%'}
-knitr::include_graphics('https://media.giphy.com/media/lJnAXeJO8tE7E37mxq/giphy.gif')
-```
 
 ---
-## CRONOGRAMA DA DISCIPLINA
+## ENTENDENDO A EXISTÊNCIA DE PACOTES
 
 .pull-left[
-```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
-library(magrittr)
-library(kableExtra)
+**Pacote 1 (Finalidade: furar parede)**
 
-cronograma <- data.frame(
-  
-  AULA = c(1, 2, 3, 4, 5, 6, 7, 8),
-  
-  DIA = c('21/03', '28/03', '04/04', '11/04', '18/04', '25/04', '02/05', '09/05'),
-  
-  TEMAS = c('Apresentação da Disciplina', 
-           
-           'Nivelamento em Programação', 
-           
-           'Conceitos Básicos', 
-           
-           'Medidas de Tendência Central',
-           
-           'Medidas de Dispersão',
-           
-           'Análise Gráfica',
-           
-           'Resumo dos Dados', 
-           
-           'Apresentação de Trabalho'))
+<br/>
 
-knitr::kable(cronograma, 
-             
-             escape = FALSE,
-    
-             format = 'html',
-             
-             align = c('c', 'l', 'l')) %>%
-  
-  kable_styling(bootstrap_options = 'striped')
-
+```{r, echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics('foto_furadeira.jpg')
 ```
 ]
 
 .pull-right[
-```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
-library(magrittr)
-library(kableExtra)
+**Pacote 2 ("Finalidade: Apertar porcas")**
 
-cronograma <- data.frame(
-  
-  AULA = c(9, 10, 11, 12, 13, 14, 15, 16),
-  
-  DIA = c('16/05', '23/05', '30/05', '06/06', '13/06', '20/06', '27/06', '04/07'),
-  
-  TEMAS = c('Curva Normal e Propriedades', 
-           
-           'Estimadores', 
-           
-           'Teste de Hipótese (Amostra Única)', 
-           
-           'Teste de Hipótese (Duas Amostras)',
-           
-           'Teste de Hipótese (Mais Amostras)',
-           
-           'Medidas de Relação',
-           
-           'Correlação', 
-           
-           'Apresentação de Trabalho'))
+<br/>
 
-knitr::kable(cronograma, 
-             
-             escape = FALSE,
-    
-             format = 'html',
-             
-             align = c('c', 'l', 'l')) %>%
-  
-  kable_styling(bootstrap_options = 'striped')
-
+```{r, echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics('foto_chaverosca.jpg')
 ```
 ]
 
 ---
-class: inverse, center, middle
-name: avaliacoes
+## COMO INSTALAR E USAR PACOTES?
 
-# QUAL O CRONOGRAMA DAS AVALIAÇÕES?
+.pull-left[
 
-```{r, echo = F, fig.align = 'center', fig.alt= 'Gif da série the office para apresentar a organização dos atendimentos ', out.width = '50%'}
-knitr::include_graphics('https://media.giphy.com/media/SEWEmCymjv8XDbsb8I/giphy.gif')
+**NO CONSOLE**
+
+**install.packages("nome_do_pacote")**
+
+<br/>
+
+```{r, echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics('foto_instalando.jpg')
 ```
+]
 
----
-## COMPOSIÇÃO DAS NOTAS
+.pull-right[
 
-</br>
+**NO SCRIPT**
 
-- Equação Nota 1: $Nota_1  = 0,8. Trabalho_{parte 1} + 0,2.Questionários_{parte 1}$
+**nome_do_pacote::nome_da_função**
 
-</br>
+<br/>
 
-- Equação Nota 2: $Nota_2  = 0,8 .Trabalho_{parte 2} + 0,2.Questionários_{parte 2}$
-
-</br>
-
-- Equação Nota Final: $Nota_{Final}  = (Nota_1 + Nota_2)/2$
+```{r, echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics('foto_ascendendo.jpg')
+```
+]
 
 ---
 class: inverse, center, middle
