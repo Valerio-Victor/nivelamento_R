@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>NIVELAMENTO EM PROGRAMAÇÃO  (AULA 02)</title>
+    <title>NIVELAMENTO EM PROGRAMAÇÃO - RS  (AULA 02)</title>
     <meta charset="utf-8" />
     <meta name="author" content="Prof. Victor Valerio" />
-    <script src="index_files/header-attrs/header-attrs.js"></script>
-    <script src="index_files/fabric/fabric.min.js"></script>
-    <link href="index_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
-    <script src="index_files/xaringanExtra-scribble/scribble.js"></script>
-    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30}) })</script>
-    <script src="index_files/mark.js/mark.min.js"></script>
-    <link href="index_files/xaringanExtra-search/search.css" rel="stylesheet" />
-    <script src="index_files/xaringanExtra-search/search.js"></script>
+    <script src="index_files/header-attrs-2.19/header-attrs.js"></script>
+    <link href="index_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <script src="index_files/fabric-4.3.1/fabric.min.js"></script>
+    <link href="index_files/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="index_files/mark.js-8.11.1/mark.min.js"></script>
+    <link href="index_files/xaringanExtra-search-0.0.1/search.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-search-0.0.1/search.js"></script>
     <script>window.addEventListener('load', function() { window.xeSearch = new RemarkSearch({"position":"bottom-left","caseSensitive":false,"showIcon":true,"autoSearch":true}) })</script>
-    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="meutema.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# NIVELAMENTO EM PROGRAMAÇÃO </br> (AULA 02)
+.title[
+# NIVELAMENTO EM PROGRAMAÇÃO - RS </br> (AULA 02)
+]
+.subtitle[
 ## Metodologia Quantitativa em Administração
+]
+.author[
 ### Prof. Victor Valerio
-### <em>Última Atualização</em>: 27-03-2022
+]
+.date[
+### <em>Última Atualização</em>: 20-03-2023
+]
 
 ---
 
@@ -30,27 +39,15 @@ class: center, middle, inverse, title-slide
 
 
 
-
-
-
-class: inverse, center, middle
-
-# USE MÁSCARA!
-
-&lt;img src="https://media.giphy.com/media/6R2mLi910HL4VXFwOG/giphy.gif" title="Gif da série the office para apresentar a organização dos atendimentos " alt="Gif da série the office para apresentar a organização dos atendimentos " width="50%" style="display: block; margin: auto;" /&gt;
-
----
 ## APRESENTAÇÃO
 
-- [**Qual o Objetivo da Aula?**](#objetivo_aula)
+- [**QUAL O OBJETIVO DA AULA**](#objetivo_aula)
 
---
+- [**O QUE É ESSE TAL DE R?**](#sobre_r)
 
-- [**O que é esse tal de R?**](#sobre_r)
+- [**VAMOS INICIAR NOSSO DICIONÁRIO?**](#dicionario_r)
 
---
-
-- [**Vamos iniciar o nosso dicionário?**](#dicionario_r)
+- **PRIMEIROS PASSOS NO R**
 
 
 ---
@@ -59,37 +56,46 @@ name: objetivo_aula
 
 # QUAL O OBJETIVO DA AULA?
 
-&lt;img src="https://media.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif" title="Gif da série the office para apresentar o professor" alt="Gif da série the office para apresentar o professor" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="https://media.giphy.com/media/BpGWitbFZflfSUYuZ9/giphy.gif" alt="Gif da série the office para apresentar o professor" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 &lt;div style="text-align: justify"&gt;
-
 ## OBJETIVO DA AULA
 
 Esta aula tem por objetivo principal **apresentar a principal ferramenta da 
 disciplina para aplicação dos conceitos a serem trabalhados a frente: a linguagem 
 de programação R**.
 
-&lt;br/&gt;
 
 De um lado, não é esperado que você tenha qualquer conhecimento prévio. Iniciaremos
-realmente "do zero", isto é, desde a fase de instalação. Por outro lado, é esperado 
-que ao final da aula toda a nossa estação de trabalho esteja pronta para uso e, 
+realmente "do zero", isto é, desde a fase de configuração inicial. Por outro lado, é esperado que ao final da aula toda a nossa estação de trabalho esteja pronta para uso e, 
 mais que isso, que não tenhamos medo de usá-la.
 
-&lt;br/&gt;
 
-**OBS:** Como se sabe, o foco da disciplina não está na programação (ela não passa 
-de uma ferramenta) e, por isso, os conceitos relativos à programação serão apenas 
-complementares e não seremos rigorosos em suas definições. Queremos aprender a 
-aplicar e hoje daremos os primeiros passos!
+---
+&lt;div style="text-align: justify"&gt;
+## OBJETIVO DA AULA
+
+Não vamos esquecer que será a **linguagem de programação R** que nos permitirá 
+realizar **todas as etapas da ciência de dados em um único software**. Assim, o
+início do estudo em R pode parecer complicado, mas o resultado é muito importante
+para a vida profissional e acadêmica. 
+
+&lt;/br&gt;
+Vamos lembrar do ciclo da ciência de dados?
 
 ---
 &lt;div style="text-align: justify"&gt;
 
-## OBJETIVO DA AULA
+## CICLO DA CIÊNCIA DE DADOS
 
-&lt;img src="foco_aula.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="ciclo_ciencia_dados.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+&lt;div style="text-align: justify"&gt;
+## NOSSO FOCO COM O OBJETIVO DA AULA
+
+&lt;img src="foco_prog.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 class: inverse, center, middle 
@@ -97,7 +103,7 @@ name: sobre_r
 
 # O QUE É ESSE TAL DE R?
 
-&lt;img src="https://media.giphy.com/media/AEkhbYZRKUaVoEDKph/giphy.gif" title="Gif da série the office para apresentar o professor" alt="Gif da série the office para apresentar o professor" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="https://media.giphy.com/media/AEkhbYZRKUaVoEDKph/giphy.gif" alt="Gif da série the office para apresentar o professor" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 &lt;div style="text-align: justify"&gt;
@@ -109,37 +115,32 @@ dois estatísticos da Universidade de Auckland (Nova Zelândia), **R**oss Ihaka 
 **R**obert Gentleman (isso mesmo, o nome do software se refere as iniciais dos
 nomes de seus desenvolvedores).
 
-&lt;br&gt;
 
 Ele foi criado por dois estatísticos e para aplicações estatísticas (por isso a
 escolha do mesmo para esta disciplina). Atualmente, a Foudation for Statistical 
 Computing dá suporte ao software e ele ganhou uma ampla gama de aplicações e 
 funcionalidades se tornando um dos programas mais utilizados em todo o mundo!
 
-&lt;br&gt;
+---
+&lt;div style="text-align: justify"&gt;
+## O TAL DO R
 
-Programar em R significa organizar um **algoritmo que seja interpretável pelo 
-software** (na programação, dizemos: **desenvolver um algoritmo a ser compilado 
-pelo software R**). Neste sentido, é interessante desenvolver um pouco melhor este
+Como visto na aula anterior, programar em R significa organizar um **algoritmo que seja interpretável pelo software** (na programação, dizemos: **desenvolver um algoritmo a ser compilado pelo software R**). Neste sentido, é interessante desenvolver um pouco melhor este
 conceito.
 
+**DEFINIÇÃO DE ALGORITMO:**
+- Conjunto das regras e procedimentos lógicos perfeitamente 
+definidos que levam à solução de um problema em um número finito de etapas.
+
+
 ---
+&lt;div style="text-align: justify"&gt;
 ## AFINAL, O QUE SIGNIFICA PROGRAMAR EM R?
 
-.pull-left[
-**DEFINIÇÃO DE ALGORITMO:**
-- **Matemática**: Sequência finita de regras, raciocínios ou operações que, 
-aplicada a um número finito de dados, permite solucionar classes semelhantes de problemas.
-
-- **Informática**: Conjunto das regras e procedimentos lógicos perfeitamente 
-definidos que levam à solução de um problema em um número finito de etapas.
-]
-
-.pull-right[
 **COMPILAR EM R:**
-- Tradução (ou interpretação) de um determinado código escrito (algoritmo) em 
-linguagem de máquina para a execução das tarefas definidas.
-]
+- Tradução (ou **interpretação**) de um determinado código escrito 
+(**algoritmo**) em linguagem de máquina para a execução das tarefas definidas.
+
 
 ---
 &lt;div style="text-align: justify"&gt;
@@ -149,12 +150,14 @@ Como visto, um algoritmo é uma sequência de etapas escritas em um código e co
 alguma finalidade específica. Mas essa singela definição pode deixar passar um 
 fato importante: **O código pode ser muito grande, com muitos "atributos"!**
 
-&lt;br/&gt;
 
 Assim, o seu desenvolvimento pode se tornar complexo em alguns casos e, mais que 
 isso, o seu entedimento no futuro (quando for retomado por você ou mesmo por outros pesquisadores) também pode ser complicado.
 
-&lt;br/&gt; 
+
+---
+&lt;div style="text-align: justify"&gt;
+## PRECISAMOS SER ORGANIZADOS, SEMPRE!
 
 Para nos ajudar nessa tarefa de organizar os algoritmos desenvolvidos, ou em 
 desenvolvimento, utilizamos um outro aplicativo denominado: **RStudio**. Vale 
@@ -188,7 +191,7 @@ name: dicionario_r
 
 # VAMOS INICIAR O NOSSO DICIONÁRIO?
 
-&lt;img src="https://media.giphy.com/media/9psHrHyIXciY6lCz8B/giphy.gif" title="Gif da série the office para apresentar o professor" alt="Gif da série the office para apresentar o professor" width="50%" style="display: block; margin: auto;" /&gt;
+&lt;img src="https://media.giphy.com/media/9psHrHyIXciY6lCz8B/giphy.gif" alt="Gif da série the office para apresentar o professor" width="50%" style="display: block; margin: auto;" /&gt;
 
 ---
 &lt;div style="text-align: justify"&gt;
@@ -205,7 +208,11 @@ pode ser associada (armazenada) em uma variável. Para criar um objeto no R (ou
 associar determinada informação à um objeto) utiliza-se o sinal de atribuição 
 "&lt;-" (como se fosse uma seta que mostra o que está sendo atribuído ao objeto).
 
-&lt;br/&gt;
+
+---
+&lt;div style="text-align: justify"&gt;
+
+## CONCEITOS INICIAIS
 
 - **FUNÇÃO:** Ação (ou conjunto de ações) pré-definidas a serem implementadas de 
 modo a gerar um *output* a partir de algum *input* a ser fornecido. Os inputs
@@ -223,7 +230,6 @@ alguns casos, contendo dados de exemplo também).
 .pull-left[
 **Pacote 1 (Finalidade: furar parede)**
 
-&lt;br/&gt;
 
 &lt;img src="foto_furadeira.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 ]
@@ -231,7 +237,6 @@ alguns casos, contendo dados de exemplo também).
 .pull-right[
 **Pacote 2 ("Finalidade: Apertar porcas")**
 
-&lt;br/&gt;
 
 &lt;img src="foto_chaverosca.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 ]
@@ -245,8 +250,6 @@ alguns casos, contendo dados de exemplo também).
 
 **install.packages("nome_do_pacote")**
 
-&lt;br/&gt;
-
 &lt;img src="foto_instalando.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
@@ -256,7 +259,6 @@ alguns casos, contendo dados de exemplo também).
 
 **nome_do_pacote::nome_da_função**
 
-&lt;br/&gt;
 
 &lt;img src="foto_ascendendo.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 ]
@@ -265,7 +267,7 @@ alguns casos, contendo dados de exemplo também).
 class: inverse, center, middle
 
 
-&lt;img src="https://media.giphy.com/media/n4oKYFlAcv2AU/giphy.gif" title="Gif para agradecer pela atenção e o tema é da série the office" alt="Gif para agradecer pela atenção e o tema é da série the office" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="https://media.giphy.com/media/n4oKYFlAcv2AU/giphy.gif" alt="Gif para agradecer pela atenção e o tema é da série the office" width="80%" style="display: block; margin: auto;" /&gt;
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
@@ -316,6 +318,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
